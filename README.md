@@ -1,16 +1,17 @@
 ### Hi there 👋
 
-I'm Marco Cesarato, a 25 y/o Italian Software Architect.
+I'm Marco Cesarato, a 25 y/o Italian Fullstack Developer and currently working as Software Architect.
 
 I'm a weird guy 👽 who likes making weird things with the technology.
 
 I like to resolve problems, create smart user interfaces and imagine useful interaction, developing rich web experiences & good web and mobile applications.
-I care about creating high-quality, in terms of UI/UX 🔭 and performance 🚀, softwares.
+I care about creating high-quality, in terms of UI/UX 🔭 and performance 🚀, applications.
 
 I know likely all the most popular programming languages 😆, but I'm ready to pick up new one 🌱.
 
+- 👶 Programming since: 2012
 - 📚 Interests: I'm always interested in learning
-- 😍 Favorite Programming Language: probably it's PHP, because can be well structured and is dinamyc at the same time
+- 😍 Favorite Programming Language: probably it's PHP, because can be well structured and is dynamic at the same time
 - 😄 Pronouns: Marko
 - 🎮 Hobbies: I like to play to League of Legends and I think to be a decent player, peak elo Master 😃
 
