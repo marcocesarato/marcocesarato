@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'm Marco Cesarato, a 25 y/o Italian Fullstack Developer and currently working as Software Architect.
+I'm Marco Cesarato, a 25 y/o Italian Fullstack Software Engineer.
 
 I'm a weird guy 👽 who likes making weird things with the technology.
 
