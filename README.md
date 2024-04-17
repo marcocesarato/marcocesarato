@@ -11,7 +11,7 @@ I know likely all the most popular programming languages 😆, but I'm ready to 
 
 - 👶 Programming since: 2012
 - 📚 Interests: I'm always interested in learning
-- 😍 Favorite Programming Language: probably are JavaScript and PHP, because they can be well structured and is dynamic at the same time, don't need too much external libaries and its learning cost is very low, saving more valuable time
+- 😍 Favorite Programming Language: probably are TypeScript and Python, because they can be well structured and is dynamic at the same time, don't need too much external libaries and its learning cost is very low, saving more valuable time
 - 🎮 Hobbies: I like to play to League of Legends and I think to be a decent player, peak elo Master 😃
 
 <!--
