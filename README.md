@@ -1,8 +1,6 @@
-# Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32">
+# Hi there, I'm Marco Cesarato <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32">
 
-I'm Marco Cesarato, a Italian Fullstack Software Engineer.
-
-I'm a weird guy 👽 who likes making weird things with the technology.
+I'm a Italian Software Architect and a weird guy 👽 who likes making weird things with the technology.
 
 I like to resolve problems, create smart user interfaces and imagine useful interaction, developing rich web experiences & good web and mobile applications.
 I care about creating high-quality, in terms of UI/UX 🔭 and performance 🚀, applications.
