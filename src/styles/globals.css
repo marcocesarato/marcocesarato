@@ -1,0 +1,84 @@
+/**
+ * Global Styles
+ * CSS Custom Properties and Reset
+ */
+
+:root {
+  /* Colors */
+  --lg-glass-white: rgba(255, 255, 255, 0.7);
+  --lg-glass-white-strong: rgba(255, 255, 255, 0.85);
+  --lg-glass-white-subtle: rgba(255, 255, 255, 0.5);
+  --lg-glass-dark: rgba(20, 20, 30, 0.7);
+  --lg-glass-dark-strong: rgba(20, 20, 30, 0.85);
+  --lg-glass-dark-subtle: rgba(20, 20, 30, 0.5);
+
+  /* Accent Colors */
+  --lg-accent-blue: rgba(0, 122, 255, 0.8);
+  --lg-accent-purple: rgba(175, 82, 222, 0.8);
+  --lg-accent-green: rgba(52, 199, 89, 0.8);
+  --lg-accent-red: rgba(255, 59, 48, 0.8);
+  --lg-accent-orange: rgba(255, 149, 0, 0.8);
+  --lg-accent-yellow: rgba(255, 214, 10, 0.8);
+
+  /* Text Colors */
+  --lg-text-primary: rgba(0, 0, 0, 0.9);
+  --lg-text-secondary: rgba(0, 0, 0, 0.6);
+  --lg-text-tertiary: rgba(0, 0, 0, 0.4);
+
+  /* Spacing */
+  --lg-space-1: 4px;
+  --lg-space-2: 8px;
+  --lg-space-3: 12px;
+  --lg-space-4: 16px;
+  --lg-space-6: 24px;
+  --lg-space-8: 32px;
+  --lg-space-12: 48px;
+
+  /* Border Radius */
+  --lg-radius-sm: 8px;
+  --lg-radius-md: 12px;
+  --lg-radius-lg: 16px;
+  --lg-radius-xl: 20px;
+  --lg-radius-full: 9999px;
+
+  /* Typography */
+  --lg-font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --lg-font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', monospace;
+
+  /* Font Sizes */
+  --lg-text-xs: 12px;
+  --lg-text-sm: 13px;
+  --lg-text-base: 15px;
+  --lg-text-md: 16px;
+  --lg-text-lg: 17px;
+  --lg-text-xl: 20px;
+  --lg-text-2xl: 22px;
+  --lg-text-3xl: 28px;
+  --lg-text-4xl: 34px;
+  --lg-text-5xl: 48px;
+
+  /* Transitions */
+  --lg-duration-fast: 150ms;
+  --lg-duration-normal: 250ms;
+  --lg-duration-slow: 350ms;
+
+  /* Easing */
+  --lg-ease-fluid: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Dark mode overrides */
+[data-theme="dark"],
+[data-computed-theme="dark"] {
+  --lg-text-primary: rgba(255, 255, 255, 0.95);
+  --lg-text-secondary: rgba(255, 255, 255, 0.7);
+  --lg-text-tertiary: rgba(255, 255, 255, 0.5);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --lg-duration-fast: 0ms;
+    --lg-duration-normal: 0ms;
+    --lg-duration-slow: 0ms;
+  }
+}
