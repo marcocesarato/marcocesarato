@@ -247,6 +247,173 @@
       </lg-glass-container>
     </div>
 
+    <!-- NEW: Alerts -->
+    <div class="demo-section">
+      <h2 class="demo-title">Alerts</h2>
+      <lg-stack direction="vertical" style="gap: 16px;">
+        <lg-alert variant="info" title="Information" closable>
+          This is an informational message with closable option.
+        </lg-alert>
+        <lg-alert variant="success" title="Success!">
+          Your changes have been saved successfully.
+        </lg-alert>
+        <lg-alert variant="warning" title="Warning" closable>
+          Please review your information before submitting.
+        </lg-alert>
+        <lg-alert variant="error" title="Error">
+          Something went wrong. Please try again.
+        </lg-alert>
+      </lg-stack>
+    </div>
+
+    <!-- NEW: Progress Bars -->
+    <div class="demo-section">
+      <h2 class="demo-title">Progress Bars</h2>
+      <lg-glass-container>
+        <lg-stack direction="vertical" style="gap: 24px;">
+          <lg-progress value="75" label="Upload Progress" show-value></lg-progress>
+          <lg-progress value="45" variant="success" label="Processing" show-value></lg-progress>
+          <lg-progress value="60" variant="warning" size="lg" show-value></lg-progress>
+          <lg-progress indeterminate label="Loading..."></lg-progress>
+        </lg-stack>
+      </lg-glass-container>
+    </div>
+
+    <!-- NEW: Avatars -->
+    <div class="demo-section">
+      <h2 class="demo-title">Avatars</h2>
+      <lg-glass-container>
+        <lg-stack direction="horizontal" align="center" style="gap: 16px; flex-wrap: wrap;">
+          <lg-avatar size="xs" initials="XS"></lg-avatar>
+          <lg-avatar size="sm" initials="SM" status="online"></lg-avatar>
+          <lg-avatar size="md" initials="MD" status="busy"></lg-avatar>
+          <lg-avatar size="lg" alt="John Doe" status="away"></lg-avatar>
+          <lg-avatar size="xl" initials="XL" status="offline"></lg-avatar>
+        </lg-stack>
+      </lg-glass-container>
+    </div>
+
+    <!-- NEW: Radio Buttons & Select -->
+    <div class="demo-section">
+      <h2 class="demo-title">Radio Buttons & Select</h2>
+      <lg-glass-container>
+        <lg-grid cols="2">
+          <lg-stack direction="vertical" style="gap: 12px;">
+            <h4 style="margin: 0 0 8px 0;">Choose an option:</h4>
+            <lg-radio name="option" value="1" label="Option 1" checked></lg-radio>
+            <lg-radio name="option" value="2" label="Option 2"></lg-radio>
+            <lg-radio name="option" value="3" label="Option 3"></lg-radio>
+            <lg-radio name="option" value="4" label="Disabled" disabled></lg-radio>
+          </lg-stack>
+          <lg-stack direction="vertical" style="gap: 16px;">
+            <lg-select label="Select Country" value="us"></lg-select>
+            <lg-select label="Select Size">
+              <option value="xs">Extra Small</option>
+              <option value="sm">Small</option>
+              <option value="md" selected>Medium</option>
+              <option value="lg">Large</option>
+              <option value="xl">Extra Large</option>
+            </lg-select>
+          </lg-stack>
+        </lg-grid>
+      </lg-glass-container>
+    </div>
+
+    <!-- NEW: Tooltips -->
+    <div class="demo-section">
+      <h2 class="demo-title">Tooltips</h2>
+      <lg-glass-container>
+        <lg-stack direction="horizontal" justify="center" style="gap: 32px; flex-wrap: wrap;">
+          <lg-tooltip text="Tooltip on top" position="top">
+            <lg-button>Top</lg-button>
+          </lg-tooltip>
+          <lg-tooltip text="Tooltip on right" position="right">
+            <lg-button>Right</lg-button>
+          </lg-tooltip>
+          <lg-tooltip text="Tooltip on bottom" position="bottom">
+            <lg-button>Bottom</lg-button>
+          </lg-tooltip>
+          <lg-tooltip text="Tooltip on left" position="left">
+            <lg-button>Left</lg-button>
+          </lg-tooltip>
+        </lg-stack>
+      </lg-glass-container>
+    </div>
+
+    <!-- NEW: Skeleton Loaders -->
+    <div class="demo-section">
+      <h2 class="demo-title">Skeleton Loaders</h2>
+      <lg-glass-container>
+        <lg-grid cols="2">
+          <lg-stack direction="vertical" style="gap: 12px;">
+            <lg-skeleton variant="text"></lg-skeleton>
+            <lg-skeleton variant="text"></lg-skeleton>
+            <lg-skeleton variant="text" width="60%"></lg-skeleton>
+          </lg-stack>
+          <lg-stack direction="horizontal" align="center" style="gap: 16px;">
+            <lg-skeleton variant="circular" width="60px" height="60px"></lg-skeleton>
+            <lg-stack direction="vertical" style="gap: 8px; flex: 1;">
+              <lg-skeleton variant="text"></lg-skeleton>
+              <lg-skeleton variant="text" width="70%"></lg-skeleton>
+            </lg-stack>
+          </lg-stack>
+        </lg-grid>
+      </lg-glass-container>
+    </div>
+
+    <!-- NEW: Tabs -->
+    <div class="demo-section">
+      <h2 class="demo-title">Tabs</h2>
+      <lg-tabs active="0">
+        <div label="Profile">
+          <lg-heading level="4" style="margin-bottom: 12px;">Profile Tab</lg-heading>
+          <p>This is the profile content. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div label="Settings">
+          <lg-heading level="4" style="margin-bottom: 12px;">Settings Tab</lg-heading>
+          <p>Configure your settings here.</p>
+        </div>
+        <div label="Messages">
+          <lg-heading level="4" style="margin-bottom: 12px;">Messages Tab</lg-heading>
+          <p>You have no new messages.</p>
+        </div>
+      </lg-tabs>
+    </div>
+
+    <!-- NEW: Dividers -->
+    <div class="demo-section">
+      <h2 class="demo-title">Dividers</h2>
+      <lg-glass-container>
+        <p>Content above</p>
+        <lg-divider></lg-divider>
+        <p>Content below</p>
+        <lg-divider>With Text</lg-divider>
+        <p>More content</p>
+      </lg-glass-container>
+    </div>
+
+    <!-- NEW: Modal Demo Button -->
+    <div class="demo-section">
+      <h2 class="demo-title">Modal</h2>
+      <lg-glass-container>
+        <lg-button variant="primary" id="openModal">Open Modal</lg-button>
+      </lg-glass-container>
+    </div>
+
+    <!-- Modal (hidden by default) -->
+    <lg-modal id="demoModal" title="Example Modal" size="md">
+      <p style="margin-bottom: 16px;">This is a beautiful glass modal with backdrop blur effect.</p>
+      <p style="margin-bottom: 16px;">Try pressing the ESC key or clicking outside to close.</p>
+      <lg-input label="Your Name" placeholder="Enter your name"></lg-input>
+      <div slot="footer">
+        <lg-button variant="ghost" id="closeModal">Cancel</lg-button>
+        <lg-button variant="primary">Save Changes</lg-button>
+      </div>
+    </lg-modal>
+
+    <!-- Toast (hidden by default) -->
+    <lg-toast id="demoToast" variant="success" title="Success!" message="This is a toast notification!" position="top-right"></lg-toast>
+
     <!-- Footer -->
     <lg-glass-container intensity="subtle" style="margin: 60px 0 40px; padding: 40px; text-align: center;">
       <lg-heading level="4" style="margin-bottom: 12px;">Built with Liquid Glass UI</lg-heading>
@@ -282,6 +449,20 @@
     document.addEventListener('lg-input', (e) => {
       console.log('Input value:', e.detail);
     });
+
+    // Modal interactions
+    document.getElementById('openModal')?.addEventListener('click', () => {
+      document.getElementById('demoModal').open = true;
+    });
+
+    document.getElementById('closeModal')?.addEventListener('click', () => {
+      document.getElementById('demoModal').open = false;
+    });
+
+    // Show toast on page load
+    setTimeout(() => {
+      document.getElementById('demoToast').open = true;
+    }, 1000);
   </script>
 </body>
 </html>
