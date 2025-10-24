@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquid Glass UI - Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .demo-section {
+      margin: 40px 0;
+    }
+
+    .demo-title {
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .demo-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .spacing {
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <lg-navbar>
+    <div slot="start">
+      <lg-heading level="3" style="color: rgba(0, 0, 0, 0.9); margin: 0;">Liquid Glass UI</lg-heading>
+    </div>
+    <div slot="end" style="display: flex; gap: 12px;">
+      <lg-button variant="ghost" size="sm">Docs</lg-button>
+      <lg-button variant="primary" size="sm">GitHub</lg-button>
+    </div>
+  </lg-navbar>
+
+  <div class="spacing"></div>
+
+  <!-- Main Container -->
+  <lg-container size="xl">
+
+    <!-- Hero Section -->
+    <lg-glass-container intensity="strong" style="margin: 40px 0; padding: 60px 40px; text-align: center;">
+      <lg-heading level="1" style="margin-bottom: 16px;">Welcome to Liquid Glass UI</lg-heading>
+      <p style="font-size: 18px; color: rgba(0, 0, 0, 0.7); margin-bottom: 32px;">
+        A framework-agnostic design system inspired by iOS 26's stunning Liquid Glass design language
+      </p>
+      <lg-stack direction="horizontal" justify="center" style="gap: 16px;">
+        <lg-button variant="primary" size="lg">Get Started</lg-button>
+        <lg-button variant="outline" size="lg">View Components</lg-button>
+      </lg-stack>
+    </lg-glass-container>
+
+    <!-- Buttons Section -->
+    <div class="demo-section">
+      <h2 class="demo-title">Buttons</h2>
+      <lg-glass-container>
+        <lg-stack direction="horizontal" style="gap: 12px; flex-wrap: wrap;">
+          <lg-button variant="default">Default</lg-button>
+          <lg-button variant="primary">Primary</lg-button>
+          <lg-button variant="secondary">Secondary</lg-button>
+          <lg-button variant="success">Success</lg-button>
+          <lg-button variant="danger">Danger</lg-button>
+          <lg-button variant="ghost">Ghost</lg-button>
+          <lg-button variant="outline">Outline</lg-button>
+          <lg-button disabled>Disabled</lg-button>
+        </lg-stack>
+        <div class="spacing"></div>
+        <lg-stack direction="horizontal" style="gap: 12px; flex-wrap: wrap;">
+          <lg-button size="xs">Extra Small</lg-button>
+          <lg-button size="sm">Small</lg-button>
+          <lg-button size="md">Medium</lg-button>
+          <lg-button size="lg">Large</lg-button>
+          <lg-button size="xl">Extra Large</lg-button>
+        </lg-stack>
+      </lg-glass-container>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="demo-section">
+      <h2 class="demo-title">Cards</h2>
+      <lg-grid cols="3">
+        <lg-card hoverable>
+          <div slot="header">
+            <lg-heading level="4">Card Title 1</lg-heading>
+          </div>
+          <p>This is a beautiful glass card with hover effect. Try hovering over it!</p>
+          <div slot="footer">
+            <lg-stack direction="horizontal" justify="end" style="gap: 8px;">
+              <lg-button size="sm" variant="ghost">Cancel</lg-button>
+              <lg-button size="sm" variant="primary">Save</lg-button>
+            </lg-stack>
+          </div>
+        </lg-card>
+
+        <lg-card hoverable>
+          <div slot="header">
+            <lg-stack direction="horizontal" justify="between" align="center">
+              <lg-heading level="4">Card Title 2</lg-heading>
+              <lg-badge variant="success">New</lg-badge>
+            </lg-stack>
+          </div>
+          <p>Another stunning card with a badge. The glass effect looks amazing on any background.</p>
+          <div slot="footer">
+            <lg-button size="sm" variant="primary" full-width>View Details</lg-button>
+          </div>
+        </lg-card>
+
+        <lg-card hoverable>
+          <div slot="header">
+            <lg-heading level="4">Card Title 3</lg-heading>
+          </div>
+          <p>Cards automatically adapt to light and dark modes. The glass effect is always perfect.</p>
+          <div slot="footer">
+            <lg-spinner size="sm"></lg-spinner>
+            <span style="margin-left: 8px; color: rgba(0, 0, 0, 0.6);">Loading...</span>
+          </div>
+        </lg-card>
+      </lg-grid>
+    </div>
+
+    <!-- Form Elements -->
+    <div class="demo-section">
+      <h2 class="demo-title">Form Elements</h2>
+      <lg-glass-container>
+        <lg-grid cols="2">
+          <lg-stack direction="vertical" style="gap: 16px;">
+            <lg-input label="Email" type="email" placeholder="Enter your email"></lg-input>
+            <lg-input label="Password" type="password" placeholder="Enter password"></lg-input>
+            <lg-input label="Error State" error error-message="This field is required" value="Invalid input"></lg-input>
+          </lg-stack>
+
+          <lg-stack direction="vertical" style="gap: 20px;">
+            <lg-toggle label="Enable notifications" checked></lg-toggle>
+            <lg-toggle label="Dark mode"></lg-toggle>
+            <lg-toggle label="Disabled option" disabled></lg-toggle>
+            <div class="spacing"></div>
+            <lg-checkbox label="I agree to terms" checked></lg-checkbox>
+            <lg-checkbox label="Subscribe to newsletter"></lg-checkbox>
+            <lg-checkbox label="Disabled checkbox" disabled></lg-checkbox>
+          </lg-stack>
+        </lg-grid>
+      </lg-glass-container>
+    </div>
+
+    <!-- Badges & Spinners -->
+    <div class="demo-section">
+      <h2 class="demo-title">Badges & Spinners</h2>
+      <lg-glass-container>
+        <lg-stack direction="vertical" style="gap: 24px;">
+          <lg-stack direction="horizontal" style="gap: 12px; flex-wrap: wrap;">
+            <lg-badge variant="primary">Primary</lg-badge>
+            <lg-badge variant="success">Success</lg-badge>
+            <lg-badge variant="warning">Warning</lg-badge>
+            <lg-badge variant="danger">Danger</lg-badge>
+            <lg-badge variant="neutral">Neutral</lg-badge>
+          </lg-stack>
+
+          <lg-stack direction="horizontal" align="center" style="gap: 24px;">
+            <div>
+              <lg-spinner size="sm"></lg-spinner>
+              <span style="margin-left: 8px; color: rgba(0, 0, 0, 0.7);">Small</span>
+            </div>
+            <div>
+              <lg-spinner size="md"></lg-spinner>
+              <span style="margin-left: 8px; color: rgba(0, 0, 0, 0.7);">Medium</span>
+            </div>
+            <div>
+              <lg-spinner size="lg"></lg-spinner>
+              <span style="margin-left: 8px; color: rgba(0, 0, 0, 0.7);">Large</span>
+            </div>
+          </lg-stack>
+        </lg-stack>
+      </lg-glass-container>
+    </div>
+
+    <!-- Glass Containers -->
+    <div class="demo-section">
+      <h2 class="demo-title">Glass Container Intensities</h2>
+      <lg-grid cols="3">
+        <lg-glass-container intensity="subtle">
+          <lg-heading level="4">Subtle Glass</lg-heading>
+          <p>A subtle glass effect with less blur and opacity.</p>
+        </lg-glass-container>
+
+        <lg-glass-container intensity="medium">
+          <lg-heading level="4">Medium Glass</lg-heading>
+          <p>The default medium glass effect. Balanced and beautiful.</p>
+        </lg-glass-container>
+
+        <lg-glass-container intensity="strong">
+          <lg-heading level="4">Strong Glass</lg-heading>
+          <p>A strong glass effect with more blur and opacity.</p>
+        </lg-glass-container>
+      </lg-grid>
+    </div>
+
+    <!-- Layout Components -->
+    <div class="demo-section">
+      <h2 class="demo-title">Layout Components</h2>
+      <lg-glass-container>
+        <lg-heading level="4" style="margin-bottom: 16px;">Responsive Grid</lg-heading>
+        <lg-grid cols="4">
+          <div style="background: rgba(0, 122, 255, 0.3); padding: 20px; border-radius: 12px; text-align: center;">1</div>
+          <div style="background: rgba(175, 82, 222, 0.3); padding: 20px; border-radius: 12px; text-align: center;">2</div>
+          <div style="background: rgba(52, 199, 89, 0.3); padding: 20px; border-radius: 12px; text-align: center;">3</div>
+          <div style="background: rgba(255, 149, 0, 0.3); padding: 20px; border-radius: 12px; text-align: center;">4</div>
+        </lg-grid>
+
+        <div class="spacing"></div>
+        <div class="spacing"></div>
+
+        <lg-heading level="4" style="margin-bottom: 16px;">Vertical Stack</lg-heading>
+        <lg-stack direction="vertical" style="gap: 12px;">
+          <div style="background: rgba(0, 122, 255, 0.2); padding: 16px; border-radius: 12px;">Stack Item 1</div>
+          <div style="background: rgba(175, 82, 222, 0.2); padding: 16px; border-radius: 12px;">Stack Item 2</div>
+          <div style="background: rgba(52, 199, 89, 0.2); padding: 16px; border-radius: 12px;">Stack Item 3</div>
+        </lg-stack>
+
+        <div class="spacing"></div>
+        <div class="spacing"></div>
+
+        <lg-heading level="4" style="margin-bottom: 16px;">Horizontal Stack</lg-heading>
+        <lg-stack direction="horizontal" justify="between" align="center">
+          <div style="background: rgba(0, 122, 255, 0.2); padding: 16px; border-radius: 12px;">Left</div>
+          <div style="background: rgba(175, 82, 222, 0.2); padding: 16px; border-radius: 12px;">Center</div>
+          <div style="background: rgba(52, 199, 89, 0.2); padding: 16px; border-radius: 12px;">Right</div>
+        </lg-stack>
+      </lg-glass-container>
+    </div>
+
+    <!-- Footer -->
+    <lg-glass-container intensity="subtle" style="margin: 60px 0 40px; padding: 40px; text-align: center;">
+      <lg-heading level="4" style="margin-bottom: 12px;">Built with Liquid Glass UI</lg-heading>
+      <p style="color: rgba(0, 0, 0, 0.6); margin-bottom: 24px;">
+        A modern, accessible, and framework-agnostic design system
+      </p>
+      <lg-stack direction="horizontal" justify="center" style="gap: 8px;">
+        <lg-badge>Web Components</lg-badge>
+        <lg-badge variant="success">TypeScript</lg-badge>
+        <lg-badge variant="warning">Lit</lg-badge>
+        <lg-badge variant="danger">Vite</lg-badge>
+      </lg-stack>
+    </lg-glass-container>
+
+  </lg-container>
+
+  <!-- Import the library -->
+  <script type="module" src="/src/index.ts"></script>
+
+  <!-- Add some interactivity -->
+  <script>
+    // Listen to button clicks
+    document.addEventListener('lg-click', (e) => {
+      console.log('Button clicked:', e.detail);
+    });
+
+    // Listen to toggle changes
+    document.addEventListener('lg-change', (e) => {
+      console.log('Value changed:', e.detail);
+    });
+
+    // Listen to input changes
+    document.addEventListener('lg-input', (e) => {
+      console.log('Input value:', e.detail);
+    });
+  </script>
+</body>
+</html>
